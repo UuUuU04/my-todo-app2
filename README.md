@@ -7,7 +7,7 @@ JavaScriptを使用して作成したシンプルなTodoアプリです。
 
 ## Demo
 
-https://UuUuU04.github.io/todo-app/
+https://UuUuU04.github.io/my-todo-app2/
 
 ---
 
