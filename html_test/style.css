@@ -1,0 +1,75 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 420px;
+  margin: 60px auto;
+  background: #fff;
+  padding: 24px;
+  border-radius: 10px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.input-area {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* リスト */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Todo1件 */
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+/* 左側（チェック＋文字） */
+.todo-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* 完了状態 */
+.completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+/* 削除ボタン */
+.delete-btn {
+  background: #ff4d4d;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 4px 8px;
+}
