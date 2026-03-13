@@ -1,7 +1,9 @@
 # Todo App
 
-JavaScriptを使用して作成したシンプルなTodoアプリです。  
-タスクの追加・削除・完了管理ができます。
+JavaScriptを使用して作成したシンプルなTodo管理アプリです。  
+タスクの追加・削除・完了状態の管理を行うことができます。
+
+このアプリはJavaScriptのDOM操作とlocalStorageの理解を目的として制作しました。
 
 ---
 
@@ -14,33 +16,90 @@ https://UuUuU04.github.io/my-todo-app2/
 ## Features
 
 - Enterキーでタスク追加
-- チェックで完了状態管理
-- タスク削除機能
+- タスク削除
+- 完了状態のチェック
 - localStorageによるデータ保存
-- レスポンシブデザイン対応
+- シンプルで見やすいUI
 
 ---
 
 ## Technologies Used
 
-- HTML5
-- CSS3
-- JavaScript (Vanilla JS)
-- localStorage API
+| Technology | Description |
+|------------|-------------|
+| HTML | アプリの構造 |
+| CSS | レイアウト・デザイン |
+| JavaScript | Todoの追加・削除などの処理 |
+| localStorage | データ保存 |
 
 ---
 
-## Learning Purpose
+## Project Structure
 
-JavaScriptのDOM操作とlocalStorageの理解を目的として制作しました。  
-今後は以下を実装予定です：
+```
+todo-app
+ ├── index.html
+ ├── style.css
+ ├── script.js
+ └── README.md
+```
 
-- 編集機能
-- フィルター機能（未完了 / 完了）
-- React版へのリファクタリング
+---
+
+## Main Functions
+
+### Todo追加
+
+```javascript
+function addTodo() {
+  const text = input.value;
+  if (text === "") return;
+
+  const li = document.createElement("li");
+  li.textContent = text;
+
+  list.appendChild(li);
+}
+```
+
+DOM操作でリスト要素を動的に追加しています。
+
+---
+
+### localStorage保存
+
+```javascript
+localStorage.setItem("todos", JSON.stringify(todos));
+```
+
+ブラウザのローカルストレージを使用して  
+ページをリロードしてもデータが消えないようにしています。
+
+---
+
+## Learning Points
+
+このアプリを通して以下を学びました。
+
+- JavaScriptのDOM操作
+- イベントリスナー
+- localStorageを使ったデータ保存
+- フロントエンドの基本構造
+
+---
+
+## Future Improvements
+
+今後は以下の機能を追加予定です。
+
+- Todo編集機能
+- フィルター機能（完了 / 未完了）
+- ドラッグ＆ドロップ並び替え
+- Reactでのリファクタリング
 
 ---
 
 ## Author
 
-UuUuU04
+Name: UuUuU04 
+GitHub: https://github.com/UuUuU04
