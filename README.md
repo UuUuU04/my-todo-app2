@@ -3,13 +3,14 @@
 JavaScriptを使用して作成したシンプルなTodo管理アプリです。  
 タスクの追加・削除・完了状態の管理を行うことができます。
 
-このアプリはJavaScriptのDOM操作とlocalStorageの理解を目的として制作しました。
+このアプリは **JavaScriptのDOM操作とlocalStorageの理解** を目的として制作しました。
 
 ---
 
 ## Demo
 
 https://UuUuU04.github.io/my-todo-app2/
+
 
 ---
 
@@ -101,5 +102,5 @@ localStorage.setItem("todos", JSON.stringify(todos));
 
 ## Author
 
-Name: UuUuU04 
+Name: UuUuU04
 GitHub: https://github.com/UuUuU04
